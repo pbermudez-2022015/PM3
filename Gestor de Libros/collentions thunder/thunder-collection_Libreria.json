@@ -1,0 +1,709 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Libreria",
+    "dateExported": "2024-03-10T21:27:40.925Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "e565ef78-0e73-48f5-bee7-636d563db5ce",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-10T19:16:43.099Z",
+            "sortNum": 10000,
+            "settings": {
+                "headers": [
+                    {
+                        "name": "Authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVkZWEzMDA0OTM3NzJlZjc0ZjVkZDQiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6IkFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzEwMTAxNjA0LCJleHAiOjE3MTAxMTk2MDR9._k-c5XIlZRrTG2CSo7n2ipSY3Kv6NA6TNMpZkO8FtSU"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "8b89d86d-427a-4838-8e67-7d9a7ba0fd89",
+            "name": "Categorias",
+            "containerId": "",
+            "created": "2024-03-10T20:06:08.525Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "57390d0f-fc17-4d3f-9593-9819ead96110",
+            "name": "libro",
+            "containerId": "",
+            "created": "2024-03-10T20:03:14.160Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "a81ea37e-aa3b-4dcf-8520-3fa01c50b37e",
+            "name": "Update Prestamos",
+            "containerId": "",
+            "created": "2024-03-10T20:03:32.157Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "2a7b2d6c-723f-4444-8ced-00142c13be2c",
+            "name": "User",
+            "containerId": "e565ef78-0e73-48f5-bee7-636d563db5ce",
+            "created": "2024-03-10T20:04:12.631Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "ae561c31-6d79-41ff-b651-3b071b6b5af0",
+            "name": "Admin ",
+            "containerId": "e565ef78-0e73-48f5-bee7-636d563db5ce",
+            "created": "2024-03-10T20:05:46.656Z",
+            "sortNum": 65000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b8d52576-fe75-40cd-aba3-1d5fabb6a403",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "2a7b2d6c-723f-4444-8ced-00142c13be2c",
+            "name": "UserRegister",
+            "url": "/user/registerUser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-10T20:04:03.087Z",
+            "modified": "2024-03-10T20:10:32.056Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Veronica"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Tobar"
+                    },
+                    {
+                        "name": "username",
+                        "value": "vtobar"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "vtobar@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": "USER"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "ef1ea2c0-5c14-4371-b1e8-527350e5c152",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "8b89d86d-427a-4838-8e67-7d9a7ba0fd89",
+            "name": "SaveCategoria",
+            "url": "/categoria/save",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-10T20:06:08.528Z",
+            "modified": "2024-03-10T20:20:22.949Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU5NjAzNDY2MjdjMTBkMjM1NDQyMWMiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6IkFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5ODkzNzk0LCJleHAiOjE3MDk5MDQ1OTR9.ztWeG5v-oArRxzPX5BnQdSLATROwjnt6v4uLkiBl4eY",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Fantasia"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Cuentos, Leyendas. etc"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "452b3e8d-ebe0-46e9-96f2-749194ccc6f2",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "57390d0f-fc17-4d3f-9593-9819ead96110",
+            "name": "SaveLibros",
+            "url": "/libro/save",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-10T20:26:04.801Z",
+            "modified": "2024-03-10T20:40:20.602Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU5NjAzNDY2MjdjMTBkMjM1NDQyMWMiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6IkFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5ODkzNzk0LCJleHAiOjE3MDk5MDQ1OTR9.ztWeG5v-oArRxzPX5BnQdSLATROwjnt6v4uLkiBl4eY",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "titulo",
+                        "value": "Alex Dogboy"
+                    },
+                    {
+                        "name": "autor",
+                        "value": "Cuentos, Leyendas. etc"
+                    },
+                    {
+                        "name": "año",
+                        "value": "2024"
+                    },
+                    {
+                        "name": "categoria",
+                        "value": "65ee15f21e6830dddadd4cf9"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "e240a7e4-26c0-427e-a876-7fbc8290bf83",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "57390d0f-fc17-4d3f-9593-9819ead96110",
+            "name": "getLibros",
+            "url": "/libro/get",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-10T20:34:03.741Z",
+            "modified": "2024-03-10T20:34:54.117Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ee0f40cb-de3f-4c99-a29f-9907060e9ba1",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "2a7b2d6c-723f-4444-8ced-00142c13be2c",
+            "name": "User Update",
+            "url": "/user/updateUser",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-03-10T20:04:48.945Z",
+            "modified": "2024-03-10T20:12:07.322Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlMTNhY2FiZjRlNzAzNThlNjIwOTMiLCJ1c2VybmFtZSI6InZ0b2JhciIsIm5hbWUiOiJWZXJvbmljYSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzEwMTAxNDk1LCJleHAiOjE3MTAxMTk0OTV9.f0rtUssQ0VMJEWONopQbFTUTYCB2HEJTenr7mEBDd3c"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Alejandra"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345679",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "surname",
+                        "value": "coy",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "username",
+                        "value": "csofia",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "role",
+                        "value": "HOLIS",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "bef4e9a5-66f6-4919-a5ab-97f995494e8a",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "8b89d86d-427a-4838-8e67-7d9a7ba0fd89",
+            "name": "get",
+            "url": "/categoria/get",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-10T20:06:08.528Z",
+            "modified": "2024-03-10T20:18:59.151Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU5NjAzNDY2MjdjMTBkMjM1NDQyMWMiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6IkFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5ODY3MDg4LCJleHAiOjE3MDk4Nzc4ODh9.2OzcNMNpOYRNXRK6Ar8SiYBgDr6c82Xe7I55RQWFiuo",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "fa2823c0-a867-4861-b6d2-b045a2d930d1",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "57390d0f-fc17-4d3f-9593-9819ead96110",
+            "name": "DeleteLibros",
+            "url": "/libro/delete/65ee1846a55dbcd98167b83c",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-03-10T20:38:16.259Z",
+            "modified": "2024-03-10T20:38:42.050Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e17a3281-b079-4464-b7dd-b0ac65761860",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "2a7b2d6c-723f-4444-8ced-00142c13be2c",
+            "name": "Delete User",
+            "url": "/user/delete/65ee13acabf4e70358e62093",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-03-10T20:04:54.889Z",
+            "modified": "2024-03-10T20:13:11.038Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlMTNhY2FiZjRlNzAzNThlNjIwOTMiLCJ1c2VybmFtZSI6InZ0b2JhciIsIm5hbWUiOiJWZXJvbmljYSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzEwMTAxNDk1LCJleHAiOjE3MTAxMTk0OTV9.f0rtUssQ0VMJEWONopQbFTUTYCB2HEJTenr7mEBDd3c"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "confirmation",
+                        "value": "SI"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "862f091e-c610-4f6a-aea7-6e716e2aad65",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "ae561c31-6d79-41ff-b651-3b071b6b5af0",
+            "name": "DefaultAdmin",
+            "url": "/user/admin",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-10T20:05:46.660Z",
+            "modified": "2024-03-10T20:05:46.660Z",
+            "headers": [],
+            "params": [],
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "144418a4-6232-4581-8f8e-be1095cac62f",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "8b89d86d-427a-4838-8e67-7d9a7ba0fd89",
+            "name": "getCategoria",
+            "url": "/categoria/getCategoria/65edf6b664c6f54e18caa9b3",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-10T20:06:08.528Z",
+            "modified": "2024-03-10T20:20:42.987Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "45462da1-65eb-4d4c-b3a2-6b0ae61b56ac",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "a81ea37e-aa3b-4dcf-8520-3fa01c50b37e",
+            "name": "Save Prestamo",
+            "url": "/prestamo/save/65ee145dc32c089b6759b3d4",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-10T20:56:24.768Z",
+            "modified": "2024-03-10T21:21:38.523Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "libro",
+                        "value": "65ee1aaa36e77f80907ae72c"
+                    },
+                    {
+                        "name": "fechaDevolucion",
+                        "value": "",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "estado",
+                        "value": "prestado"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "d821615c-eda1-44f4-a49b-ec86996bae6c",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "ae561c31-6d79-41ff-b651-3b071b6b5af0",
+            "name": "loginAdmin",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-10T20:05:46.660Z",
+            "modified": "2024-03-10T20:17:08.852Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU5NjAzNDY2MjdjMTBkMjM1NDQyMWMiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6IkFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5ODkzNzk0LCJleHAiOjE3MDk5MDQ1OTR9.ztWeG5v-oArRxzPX5BnQdSLATROwjnt6v4uLkiBl4eY",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "identifier",
+                        "value": "admin"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "019a2872-c941-4c44-bcee-8b42efa5060e",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "8b89d86d-427a-4838-8e67-7d9a7ba0fd89",
+            "name": "updateCategoria",
+            "url": "/categoria/update/65edf6b664c6f54e18caa9b3",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-10T20:06:08.528Z",
+            "modified": "2024-03-10T20:21:01.889Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU5NjAzNDY2MjdjMTBkMjM1NDQyMWMiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6IkFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5ODkzNzk0LCJleHAiOjE3MDk5MDQ1OTR9.ztWeG5v-oArRxzPX5BnQdSLATROwjnt6v4uLkiBl4eY",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Default"
+                    }
+                ]
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "b05fa407-9635-4d92-a49a-bacae7b0e5d6",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "a81ea37e-aa3b-4dcf-8520-3fa01c50b37e",
+            "name": "Get Prestamos",
+            "url": "/prestamo/get",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-10T20:56:33.286Z",
+            "modified": "2024-03-10T21:06:23.667Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "a6fdbf65-e70b-461c-a22b-8671407b820a",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "2a7b2d6c-723f-4444-8ced-00142c13be2c",
+            "name": "login ",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-10T20:05:05.734Z",
+            "modified": "2024-03-10T20:11:34.478Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "identifier",
+                        "value": "vtobar@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "de728f36-bb00-4f5f-9235-2324be2f08bb",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "ae561c31-6d79-41ff-b651-3b071b6b5af0",
+            "name": "UpdateAdmin",
+            "url": "/user/updateAdmin/65ee145dc32c089b6759b3d4",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-10T20:05:46.660Z",
+            "modified": "2024-03-10T20:17:11.875Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVkZWEzMDA0OTM3NzJlZjc0ZjVkZDQiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6IkFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzEwMTAxNjA0LCJleHAiOjE3MTAxMTk2MDR9._k-c5XIlZRrTG2CSo7n2ipSY3Kv6NA6TNMpZkO8FtSU",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Ale"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "ac7a3fe7-dcb0-4bf2-9cd4-a8e5f42dcbac",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "8b89d86d-427a-4838-8e67-7d9a7ba0fd89",
+            "name": "DeletedC",
+            "url": "/categoria/delete/65edf6b664c6f54e18caa9b3",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-10T20:06:08.528Z",
+            "modified": "2024-03-10T20:21:26.151Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU5NjAzNDY2MjdjMTBkMjM1NDQyMWMiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6IkFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5ODY1MDYyLCJleHAiOjE3MDk4NzU4NjJ9._OJTcShTMLdwV_XCZ-6UX_oZbdOlgNy0sBDGFB1JsXE",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "08524e41-5e12-44d7-a953-92f8ad382804",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "a81ea37e-aa3b-4dcf-8520-3fa01c50b37e",
+            "name": "Update Prestamos",
+            "url": "/prestamo/update/65ee232b792b081e34dff662",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-10T20:56:54.970Z",
+            "modified": "2024-03-10T21:24:18.372Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "estado",
+                        "value": "devuelto"
+                    },
+                    {
+                        "name": "fechaDevolucion",
+                        "value": "10/3/2020"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "51bdaeed-4a99-4e9c-89a3-3d54a5f64eff",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "ae561c31-6d79-41ff-b651-3b071b6b5af0",
+            "name": "RegistrarAdmin",
+            "url": "/user/registerAd",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-10T20:05:46.660Z",
+            "modified": "2024-03-10T20:17:02.816Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU5NjAzNDY2MjdjMTBkMjM1NDQyMWMiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6IkFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5ODk1Nzg1LCJleHAiOjE3MDk5MDY1ODV9.6Yj0eFaJf9J7QzjFx4hnrbg8U7uOd2bwuz_WptBW1Ms",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Josue"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Noj"
+                    },
+                    {
+                        "name": "username",
+                        "value": "jnojs"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "jnoj@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": "ADMIN"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "840c4d30-17b2-42b3-a692-51b9c2394f3a",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "ae561c31-6d79-41ff-b651-3b071b6b5af0",
+            "name": "deleteAdmin",
+            "url": "/user/deleteAdmin/65ee15621e6830dddadd4cec",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-03-10T20:05:46.660Z",
+            "modified": "2024-03-10T20:17:50.799Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU5NjAzNDY2MjdjMTBkMjM1NDQyMWMiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6IkFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5ODk1Nzg1LCJleHAiOjE3MDk5MDY1ODV9.6Yj0eFaJf9J7QzjFx4hnrbg8U7uOd2bwuz_WptBW1Ms",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "53ae62a9-b361-4ee5-a95f-ea9dc8cb664b",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "ae561c31-6d79-41ff-b651-3b071b6b5af0",
+            "name": "serach",
+            "url": "/user/search",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-10T20:05:46.660Z",
+            "modified": "2024-03-10T20:18:13.005Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU5NjAzNDY2MjdjMTBkMjM1NDQyMWMiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6IkFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5Nzk1NDM3LCJleHAiOjE3MDk4MDYyMzd9.KKGGQd0GGBCjSLMLhUR6BbByQ9Vqj89jyiu3s7f-Vgs",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": "Ale"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "76117ba9-498f-4db3-9968-7e9509ae3d22",
+            "colId": "f48474ef-66e0-45a1-9fa0-e9e7cf44c950",
+            "containerId": "ae561c31-6d79-41ff-b651-3b071b6b5af0",
+            "name": "getUserId",
+            "url": "/user/getUser/65ee145dc32c089b6759b3d4",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-10T20:05:46.660Z",
+            "modified": "2024-03-10T20:18:26.670Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVkZWEzMDA0OTM3NzJlZjc0ZjVkZDQiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6IkFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzEwMTAxNjA0LCJleHAiOjE3MTAxMTk2MDR9._k-c5XIlZRrTG2CSo7n2ipSY3Kv6NA6TNMpZkO8FtSU"
+            }
+        ],
+        "options": {
+            "baseUrl": "http://localhost:2656"
+        }
+    }
+}
